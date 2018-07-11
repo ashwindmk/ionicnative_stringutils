@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    id="ionicnative-stringutils" 
+    version="1.0.0">
+   
+   <name>IonicNativeStringUtils</name>
+   
+   <js-module name="IonicNativeStringUtils" src="www/IonicNativeStringUtils.js">
+      <clobbers target="IonicNativeStringUtils" />
+   </js-module>
+
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="IonicNativeStringUtils">
+            <param name="ios-package" value="IonicNativeStringUtils" />
+         </feature>
+      </config-file>
+      <source-file src="src/ios/IonicNativeStringUtils.m" />
+      <framework src="IOSStringUtils" type="podspec" spec="~> 0.1.1" />
+   </platform>
+
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="IonicNativeStringUtils">
+            <param name="android-package" value="ionic.native.stringutils.IonicNativeStringUtils" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/IonicNativeStringUtils.java" target-dir="src/ionic/native/stringutils" />
+      <framework custom="true" src="src/android/stringutils-sdk.gradle" type="gradleReference" />
+   </platform>
+
+</plugin>

@@ -1,0 +1,19 @@
+{
+  "name": "ionicnativestringutils",
+  "version": "1.0.0",
+  "description": "Ionic native utility plugin for string operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwindmk/ionicnative_stringutils.git"
+  },
+  "author": "Ashwin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwindmk/ionicnative_stringutils/issues"
+  },
+  "homepage": "https://github.com/ashwindmk/ionicnative_stringutils#readme"
+}
